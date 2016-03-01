@@ -49,7 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DependencySupport\" />
-    <Folder Include="Models\" />
+    <Folder Include="Models\AdminModels\" />
+    <Folder Include="Models\UserModels\" />
     <Folder Include="Providers\" />
     <Folder Include="Services\" />
   </ItemGroup>

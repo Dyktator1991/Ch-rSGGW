@@ -754,3 +754,13 @@ tr.pager td {
             margin: 0;
         }
 }
+
+.MainPageLogo {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 430px;
+    background-image: url("../Images/logo-sggw.jpg" );
+    background-repeat: no-repeat;
+}
