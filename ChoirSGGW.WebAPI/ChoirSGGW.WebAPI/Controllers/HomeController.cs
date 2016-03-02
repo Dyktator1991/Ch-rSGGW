@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ChoirSGGW.DataAccess.Context;
+using ChoirSGGW.DataAccess.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +12,7 @@ namespace ChoirSGGW.WebAPI.Controllers
     {
         public ActionResult Index()
         {
+            test aaa = new test();
             return View();
         }
     }

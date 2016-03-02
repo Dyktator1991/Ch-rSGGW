@@ -49,12 +49,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\TopicalityTypesEnums.cs" />
+    <Compile Include="Enums\UserTypeEnum.cs" />
+    <Compile Include="Models\BasicModels\BasicModel.cs" />
+    <Compile Include="Models\BasicModels\Event.cs" />
+    <Compile Include="Models\BasicModels\VisibilityModel.cs" />
+    <Compile Include="Models\SongNote.cs" />
+    <Compile Include="Models\Types\ClotheTypes.cs" />
+    <Compile Include="Models\Concert.cs" />
+    <Compile Include="Models\Photo.cs" />
+    <Compile Include="Models\Repertoire.cs" />
+    <Compile Include="Models\Sample.cs" />
+    <Compile Include="Models\Topicality.cs" />
+    <Compile Include="Models\Types\SongsType.cs" />
+    <Compile Include="Models\Types\TopicalityType.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Types\UserTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Enums\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

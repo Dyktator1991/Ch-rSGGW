@@ -195,6 +195,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ChoirSGGW.DataAccess\ChoirSGGW.DataAccess.csproj">
+      <Project>{e7ca7c63-83b9-4894-8194-c565a2913c5e}</Project>
+      <Name>ChoirSGGW.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ChoirSGGW.Domain\ChoirSGGW.Domain.csproj">
       <Project>{48a43b4c-343c-46fa-be39-422b98b7bca1}</Project>
       <Name>ChoirSGGW.Domain</Name>
