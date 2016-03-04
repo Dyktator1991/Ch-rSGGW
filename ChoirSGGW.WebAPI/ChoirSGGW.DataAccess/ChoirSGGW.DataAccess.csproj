@@ -101,6 +101,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Context\ChoirContext.cs" />
+    <Compile Include="Context\IChoirContext.cs" />
     <Compile Include="DependencySupport\RegisterTypes.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

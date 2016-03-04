@@ -9,7 +9,7 @@ using ChoirSGGW.Entities.Models.Types;
 
 namespace ChoirSGGW.DataAccess.Context
 {
-    public class ChoirContext : DbContext
+    public class ChoirContext : DbContext, IChoirContext
     {
         public ChoirContext() : base("name=ChoirSGGW_DB_ConnectionString")
         {

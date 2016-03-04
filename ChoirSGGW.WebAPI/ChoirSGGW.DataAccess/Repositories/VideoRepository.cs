@@ -1,4 +1,5 @@
-﻿using ChoirSGGW.DataAccess.Repositories.Interfaces;
+﻿using ChoirSGGW.DataAccess.Context;
+using ChoirSGGW.DataAccess.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,11 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class VideoRepository : IVideoRepository
     {
+        readonly IChoirContext context;
 
+        public VideoRepository(IChoirContext context)
+        {
+            this.context = context;
+        }
     }
 }

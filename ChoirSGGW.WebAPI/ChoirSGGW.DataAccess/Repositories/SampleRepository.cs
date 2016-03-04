@@ -1,4 +1,5 @@
-﻿using ChoirSGGW.DataAccess.Repositories.Interfaces;
+﻿using ChoirSGGW.DataAccess.Context;
+using ChoirSGGW.DataAccess.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,11 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class SampleRepository : ISampleRepository
     {
+        readonly IChoirContext context;
+
+        public SampleRepository(IChoirContext context)
+        {
+            this.context = context;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ChoirSGGW.DataAccess.Repositories;
+﻿using ChoirSGGW.DataAccess.Context;
+using ChoirSGGW.DataAccess.Repositories;
 using ChoirSGGW.DataAccess.Repositories.Interfaces;
 using ChoirSGGW.DataAccess.Repositories.TypesRepository;
 using ChoirSGGW.DataAccess.Repositories.TypesRepository.Interfaces;
@@ -37,6 +38,9 @@ namespace ChoirSGGW.DataAccess.DependencySupport
             unityContainer.RegisterType<ISongsTypeRepository, SongsTypeRepository>();
             unityContainer.RegisterType<ITopicalityTypeRepository, TopicalityTypeRepository>();
             unityContainer.RegisterType<IUserTypesRepository, UserTypesRepository>();
+
+            //context
+            unityContainer.RegisterType<IChoirContext, ChoirContext>();
 
             return unityContainer;
         }

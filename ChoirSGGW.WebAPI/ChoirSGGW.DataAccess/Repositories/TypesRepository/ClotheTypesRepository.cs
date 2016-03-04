@@ -1,4 +1,5 @@
-﻿using ChoirSGGW.DataAccess.Repositories.TypesRepository.Interfaces;
+﻿using ChoirSGGW.DataAccess.Context;
+using ChoirSGGW.DataAccess.Repositories.TypesRepository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,11 @@ namespace ChoirSGGW.DataAccess.Repositories.TypesRepository
 {
     public class ClotheTypesRepository : IClotheTypesRepository
     {
+        readonly IChoirContext context;
+
+        public ClotheTypesRepository(IChoirContext context)
+        {
+            this.context = context;
+        }
     }
 }
