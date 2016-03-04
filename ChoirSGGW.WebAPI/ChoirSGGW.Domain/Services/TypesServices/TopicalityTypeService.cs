@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChoirSGGW.Domain.Services.TypesServices.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChoirSGGW.Domain.Services.TypesServices
 {
-    public class TopicalityTypeService
+    public class TopicalityTypeService : ITopicalityTypeService
     {
     }
 }

@@ -1,13 +1,13 @@
-﻿using ChoirSGGW.Domain.Services.Interfaces;
+﻿using ChoirSGGW.Domain.Models.BasicModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChoirSGGW.Domain.Services
+namespace ChoirSGGW.Domain.Models.Types
 {
-    public class PhotoService : IPhotoService
+    public class UserTypesDTO : BasicModelDTO
     {
     }
 }
