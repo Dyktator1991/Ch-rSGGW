@@ -1,4 +1,5 @@
 ﻿using ChoirSGGW.DataAccess.Context;
+using ChoirSGGW.Entities.Models.Types;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace ChoirSGGW.DataAccess.Repositories
         public test2()
         {
             context = new ChoirContext();
+
+            context.ClotheType.Add(new ClotheTypes("asdasd"));
         }
 
         ChoirContext context;

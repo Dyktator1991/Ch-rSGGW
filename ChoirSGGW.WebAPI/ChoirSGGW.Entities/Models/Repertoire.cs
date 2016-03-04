@@ -16,6 +16,6 @@ namespace ChoirSGGW.Entities.Models
         [Required]
         public string SongName { get; set; }
         [Column("SongType")]
-        public SongsType SongType { get; set; }
+        public virtual SongsType SongType { get; set; }
     }
 }

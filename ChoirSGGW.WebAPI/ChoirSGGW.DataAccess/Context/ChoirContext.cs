@@ -33,19 +33,19 @@ namespace ChoirSGGW.DataAccess.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            AddToClothes();
-            AddSongs();
+            //AddToClothes();
+            //AddSongs();
         }
 
-        void AddToClothes()
-        {
-            ClotheType.Add(new ClotheTypes("Galowy"));
-            ClotheType.Add(new ClotheTypes("Dowolny"));
-        }
+        //void AddToClothes()
+        //{
+        //    ClotheType.Add(new ClotheTypes("Galowy"));
+        //    ClotheType.Add(new ClotheTypes("Dowolny"));
+        //}
 
-        void AddSongs()
-        {
-            ClotheType.Add(new ClotheTypes("Kolęda"));
-        }
+        //void AddSongs()
+        //{
+        //    ClotheType.Add(new ClotheTypes("Kolęda"));
+        //}
     }
 }

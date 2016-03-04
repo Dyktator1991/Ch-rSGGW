@@ -13,6 +13,6 @@ namespace ChoirSGGW.Entities.Models
     public class Sample : BasicModel
     {
         [Column("ClotheType")]
-        public ClotheTypes ClotheType { get; set; }
+        public virtual ClotheTypes ClotheType { get; set; }
     }
 }

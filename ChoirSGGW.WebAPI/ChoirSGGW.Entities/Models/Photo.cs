@@ -12,9 +12,6 @@ namespace ChoirSGGW.Entities.Models
     [Table("Photos")]
     public class Photo : VisibilityModel
     {
-        [Key]
-        public int PhotoID { get; set; }
-
         [Required, MaxLength(100)]
         public string PhotoName { get; set; } //photo name with extension. For example rower.jpg / samochod.png
         public string PhotoDescription { get; set; }

@@ -13,7 +13,5 @@ namespace ChoirSGGW.DataAccess.Repositories
         {
             test2 test2 = new test2();
         }
-
-        ChoirContext context;
     }
 }

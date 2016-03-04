@@ -12,7 +12,7 @@ namespace ChoirSGGW.Entities.Models.BasicModels
         [Required, MaxLength(100)]
         public string Title { get; set; }
         public string Content { get; set; }
-        public Photo MainPhoto { get; set; }
+        public virtual Photo MainPhoto { get; set; }
         [Required]
         public DateTime StartTime { get; set; }
         public DateTime? EndTime { get; set; }

@@ -1,5 +1,6 @@
 namespace ChoirSGGW.DataAccess.Migrations
 {
+    using ChoirSGGW.Entities.Models.Types;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -10,22 +11,21 @@ namespace ChoirSGGW.DataAccess.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = false;
+            ContextKey = "ChoirSGGW.DataAccess.Context.ChoirContext";
         }
 
         protected override void Seed(ChoirSGGW.DataAccess.Context.ChoirContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            context.ClotheType.AddOrUpdate(
+                clothe => clothe.ClotheType,
+                new ClotheTypes("Galowy"),
+                new ClotheTypes("Dowolny"));
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            context.SongsTypes.AddOrUpdate(
+                songType => songType.SongType,
+                new SongsType("Kolêda"),
+                new SongsType("Pieœñ"));
         }
     }
 }

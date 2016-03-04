@@ -21,6 +21,6 @@ namespace ChoirSGGW.Entities.Models
         public string SongName { get; set; }
         public string MainPhoto { get; set; }
         [Column("Notes")]
-        public List<Photo> Notes{ get; set; }
+        public virtual List<Photo> Notes{ get; set; }
     }
 }

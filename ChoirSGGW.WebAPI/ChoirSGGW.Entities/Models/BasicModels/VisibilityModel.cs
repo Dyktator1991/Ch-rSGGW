@@ -9,11 +9,10 @@ namespace ChoirSGGW.Entities.Models.BasicModels
 {
     public abstract class VisibilityModel : BasicModel
     {
-        [Required]
         public bool IsApproved { get; set; }
-        [Required]
+        //[Required]
         public virtual User UserWhoCreated { get; set; }
-        [Required]
+        //[Required]
         public virtual User UserWhoApproved { get; set; }
     }
 }
