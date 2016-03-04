@@ -14,5 +14,6 @@ namespace ChoirSGGW.Entities.Models
     {
         [Column("ClotheType")]
         public virtual ClotheTypes ClotheType { get; set; }
+        public int IsOpenToAll { get; set; }
     }
 }

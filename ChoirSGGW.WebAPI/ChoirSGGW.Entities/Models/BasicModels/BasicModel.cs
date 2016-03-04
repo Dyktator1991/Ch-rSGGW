@@ -15,5 +15,7 @@ namespace ChoirSGGW.Entities.Models.BasicModels
         public DateTime UpdatedDate { get; set; }
         [Required]
         public DateTime CreatedDate { get; set; }
+
+        public virtual User UpdatedBy { get; set; }
     }
 }
