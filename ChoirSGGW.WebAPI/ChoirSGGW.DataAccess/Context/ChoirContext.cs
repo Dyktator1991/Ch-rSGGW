@@ -32,20 +32,6 @@ namespace ChoirSGGW.DataAccess.Context
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            //AddToClothes();
-            //AddSongs();
         }
-
-        //void AddToClothes()
-        //{
-        //    ClotheType.Add(new ClotheTypes("Galowy"));
-        //    ClotheType.Add(new ClotheTypes("Dowolny"));
-        //}
-
-        //void AddSongs()
-        //{
-        //    ClotheType.Add(new ClotheTypes("Kolęda"));
-        //}
     }
 }

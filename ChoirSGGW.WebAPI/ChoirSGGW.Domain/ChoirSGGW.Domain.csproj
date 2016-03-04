@@ -94,6 +94,7 @@
   <ItemGroup>
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="DependencySupport\RegisterTypes.cs" />
     <Compile Include="Models\AchievementDTO.cs" />
     <Compile Include="Models\BasicModels\BasicModelDTO.cs" />
     <Compile Include="Models\BasicModels\EventDTO.cs" />
@@ -137,7 +138,6 @@
     <Compile Include="Services\VideoService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DependencySupport\" />
     <Folder Include="Providers\" />
   </ItemGroup>
   <ItemGroup>
