@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChoirSGGW.DataAccess.Repositories.Interfaces
+namespace ChoirSGGW.Domain.Services.TypesServices
 {
-    public interface TopicalityInterface
+    public class TopicalityTypeService
     {
     }
 }

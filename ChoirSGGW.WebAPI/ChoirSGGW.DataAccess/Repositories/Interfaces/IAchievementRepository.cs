@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChoirSGGW.DataAccess.Repositories.Interfaces
 {
-    public interface AchievementInterface
+    public interface IAchievementRepository
     {
     }
 }

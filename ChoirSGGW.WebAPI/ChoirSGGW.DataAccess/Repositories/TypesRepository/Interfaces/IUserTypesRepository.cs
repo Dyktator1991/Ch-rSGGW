@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChoirSGGW.DataAccess.Repositories.TypesRepository.Interfaces
 {
-    public interface ClotheTypesInterface
+    public interface IUserTypesRepository
     {
     }
 }

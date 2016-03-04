@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChoirSGGW.DataAccess.Repositories.TypesRepository.Interfaces
+namespace ChoirSGGW.Domain.Services
 {
-    public interface SongsTypeInterface
+    public class VideoService
     {
     }
 }

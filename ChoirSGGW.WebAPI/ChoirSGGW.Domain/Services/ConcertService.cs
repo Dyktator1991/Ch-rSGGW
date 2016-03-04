@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChoirSGGW.DataAccess.Repositories.Interfaces
+namespace ChoirSGGW.Domain.Services
 {
-    public interface RepertoireInterface
+    public class ConcertService
     {
     }
 }
