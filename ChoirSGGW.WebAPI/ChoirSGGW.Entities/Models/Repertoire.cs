@@ -11,11 +11,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace ChoirSGGW.Entities.Models
 {
     [Table("Repertoires")]
-    public class Repertoire : BasicModel
+    public class Repertoire : VisibilityModel
     {
-        [Required]
+        [Required, MaxLength(50)]
         public string SongName { get; set; }
         [Column("SongType")]
-        public virtual SongsType SongType { get; set; }
+        public virtual SongsTypes SongType { get; set; }
     }
 }

@@ -17,9 +17,9 @@ namespace ChoirSGGW.Entities.Models
             Notes = new List<Photo>();
         }
 
-        [Required]
+        [Required, MaxLength(100)]
         public string SongName { get; set; }
-        public string MainPhoto { get; set; }
+        public virtual Photo MainPhoto { get; set; }
         [Column("Notes")]
         public virtual List<Photo> Notes{ get; set; }
     }

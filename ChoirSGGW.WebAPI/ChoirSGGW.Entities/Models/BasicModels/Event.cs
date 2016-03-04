@@ -11,12 +11,14 @@ namespace ChoirSGGW.Entities.Models.BasicModels
     {
         [Required, MaxLength(100)]
         public string Title { get; set; }
+        [MaxLength(2000)]
         public string Content { get; set; }
         public virtual Photo MainPhoto { get; set; }
         public bool IsVisibleIntoTimetable { get; set; }
         [Required]
         public DateTime StartTime { get; set; }
         public DateTime? EndTime { get; set; }
+        [MaxLength(50)]
         public string Place { get; set; }
     }
 }

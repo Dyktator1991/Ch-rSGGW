@@ -25,7 +25,7 @@ namespace ChoirSGGW.DataAccess.Context
 
         //Types
         public DbSet<ClotheTypes> ClotheType { get; set; }
-        public DbSet<SongsType> SongsTypes { get; set; }
+        public DbSet<SongsTypes> SongsTypes { get; set; }
         public DbSet<TopicalityType> TopicalityType { get; set; }
         public DbSet<UserTypes> UserTypes { get; set; }
 

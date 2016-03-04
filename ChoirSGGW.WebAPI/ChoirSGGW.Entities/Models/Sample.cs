@@ -10,7 +10,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace ChoirSGGW.Entities.Models
 {
     [Table("Samples")]
-    public class Sample : BasicModel
+    public class Sample : VisibilityModel
     {
         [Column("ClotheType")]
         public virtual ClotheTypes ClotheType { get; set; }

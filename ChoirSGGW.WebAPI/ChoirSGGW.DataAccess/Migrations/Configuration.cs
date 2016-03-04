@@ -24,8 +24,8 @@ namespace ChoirSGGW.DataAccess.Migrations
 
             context.SongsTypes.AddOrUpdate(
                 songType => songType.SongType,
-                new SongsType("Kolêda"),
-                new SongsType("Pieœñ"));
+                new SongsTypes("Kolêda"),
+                new SongsTypes("Pieœñ"));
         }
     }
 }

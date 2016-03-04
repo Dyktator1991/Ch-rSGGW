@@ -14,6 +14,7 @@ namespace ChoirSGGW.Entities.Models
     {
         [Required, MaxLength(100)]
         public string PhotoName { get; set; } //photo name with extension. For example rower.jpg / samochod.png
+        [MaxLength(500)]
         public string PhotoDescription { get; set; }
         public byte[] PhotoFileByte { get; set; }
     }

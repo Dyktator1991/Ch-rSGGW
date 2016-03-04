@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ChoirSGGW.Entities.Enums;
 using ChoirSGGW.Entities.Models.BasicModels;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace ChoirSGGW.Entities.Models.Types
 {
@@ -17,6 +18,7 @@ namespace ChoirSGGW.Entities.Models.Types
             this.ClotheType = clotheType;
         }
 
+        [MaxLength(50)]
         public string ClotheType { get; set; }
     }
 }

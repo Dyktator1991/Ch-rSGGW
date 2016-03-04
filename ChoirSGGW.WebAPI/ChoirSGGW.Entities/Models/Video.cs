@@ -14,7 +14,9 @@ namespace ChoirSGGW.Entities.Models
     {
         [Required, MaxLength(100)]
         public string VideoName { get; set; } //video name
+        [MaxLength(500)]
         public string VideoDescription { get; set; }
+        [MaxLength(150)]
         public string LinkToVideo { get; set; }
     }
 }
