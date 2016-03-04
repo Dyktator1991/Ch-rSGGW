@@ -178,10 +178,16 @@
     <Compile Include="App_Data\App_Start\WebApiConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
-    <Compile Include="Areas\AdminArea\AdminAreaAreaRegistration.cs" />
-    <Compile Include="Areas\UserArea\UserAreaAreaRegistration.cs" />
+    <Compile Include="Controllers\AchievementController.cs" />
+    <Compile Include="Controllers\ConcertController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PhotoController.cs" />
+    <Compile Include="Controllers\RepertoireController.cs" />
+    <Compile Include="Controllers\SampleController.cs" />
+    <Compile Include="Controllers\SongNoteController.cs" />
+    <Compile Include="Controllers\TopicalityController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VideoController.cs" />
     <Compile Include="DependencySupport\ITypeRegister.cs" />
     <Compile Include="DependencySupport\TypeRegister.cs" />
     <Compile Include="Global.asax.cs">
@@ -229,10 +235,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Areas\AdminArea\Controllers\" />
-    <Folder Include="Areas\UserArea\Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
