@@ -132,9 +132,7 @@
     <Compile Include="Repositories\TypesRepository\TopicalityTypeRepository.cs" />
     <Compile Include="Repositories\TypesRepository\UserTypesRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
