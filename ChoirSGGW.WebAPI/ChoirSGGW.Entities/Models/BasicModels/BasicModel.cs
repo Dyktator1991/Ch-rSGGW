@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChoirSGGW.Entities.Models.BasicModels.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ChoirSGGW.Entities.Models.BasicModels
 {
-    public abstract class BasicModel
+    public abstract class BasicModel : IBasicModel
     {
         [Key]
         public int Id { get; set; }

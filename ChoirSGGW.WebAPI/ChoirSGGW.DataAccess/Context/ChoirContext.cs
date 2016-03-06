@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ChoirSGGW.Entities.Models;
 using ChoirSGGW.Entities.Models.Types;
+using System.Threading;
+using ChoirSGGW.Entities.Models.BasicModels.Interfaces;
 
 namespace ChoirSGGW.DataAccess.Context
 {
@@ -32,6 +34,38 @@ namespace ChoirSGGW.DataAccess.Context
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+        }
+
+        public override int SaveChanges()
+        {
+            var modifiedEntries = ChangeTracker.Entries()
+                .Where(x => x.Entity is IBasicModel
+                    && (x.State == System.Data.Entity.EntityState.Added
+                        || x.State == System.Data.Entity.EntityState.Modified));
+
+            foreach (var entry in modifiedEntries)
+            {
+                IBasicModel entity = entry.Entity as IBasicModel;
+                if (entity != null)
+                {
+                    string identityName = Thread.CurrentPrincipal.Identity.Name;
+                    DateTime now = DateTime.UtcNow;
+
+                    if (entry.State == System.Data.Entity.EntityState.Added)
+                    {
+                        entity.CreatedDate = now;
+                    }
+                    else
+                    {
+                        base.Entry(entity).Property(x => x.CreatedDate).IsModified = false;
+                    }
+
+                    //entity.UpdatedBy = identityName; //////TO DO !!!!
+                    entity.UpdatedDate = now;
+                }
+            }
+
+            return base.SaveChanges();
         }
     }
 }
