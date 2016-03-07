@@ -764,3 +764,11 @@ tr.pager td {
     background-image: url("../Images/logo-sggw.jpg" );
     background-repeat: no-repeat;
 }
+
+.DocumentationButton {
+    font-size: 20px; 
+    text-decoration: none; 
+    background-color: #7ac0da; 
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    color: white;
+}
