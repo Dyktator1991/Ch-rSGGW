@@ -1,18 +1,22 @@
 ﻿using ChoirSGGW.DataAccess.Context;
+using ChoirSGGW.DataAccess.Repositories.Generic;
 using ChoirSGGW.DataAccess.Repositories.Interfaces;
+using ChoirSGGW.Entities.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ChoirSGGW.DataAccess.Repositories
 {
-    public class ConcertRepository : IConcertRepository
+    public class ConcertRepository : GenericRepository<Concert>, IConcertRepository
     {
         readonly IChoirContext context;
 
-        public ConcertRepository(IChoirContext context)
+        public ConcertRepository(IChoirContext context, DbContext Dbcontext) 
+            : base(Dbcontext)
         {
             this.context = context;
         }
