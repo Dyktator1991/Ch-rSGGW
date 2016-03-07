@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class SongNoteRepository : GenericRepository<SongNote>, ISongNoteRepository
     {
-        readonly IChoirContext context;
-
-        public SongNoteRepository(IChoirContext context, DbContext dbcontext)
-            : base(dbcontext)
+        public SongNoteRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

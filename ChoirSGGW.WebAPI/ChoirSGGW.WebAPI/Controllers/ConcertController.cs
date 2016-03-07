@@ -9,7 +9,7 @@ namespace ChoirSGGW.WebAPI.Controllers
 {
     public class ConcertController : ApiController
     {
-        readonly IConcertService concertService;
+        private readonly IConcertService concertService;
 
         public ConcertController(IConcertService concertService)
         {

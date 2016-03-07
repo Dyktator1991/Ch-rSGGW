@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using ChoirSGGW.WebAPI.DependencySupport;
 
 namespace ChoirSGGW.WebAPI.App_Start
 {
@@ -35,8 +36,7 @@ namespace ChoirSGGW.WebAPI.App_Start
             // NOTE: To load from web.config uncomment the line below. Make sure to add a Microsoft.Practices.Unity.Configuration to the using statements.
             // container.LoadConfiguration();
 
-            // TODO: Register your types here
-            // container.RegisterType<IProductRepository, ProductRepository>();
+            new TypeRegister(container).BuildUnityContainer();
         }
     }
 }

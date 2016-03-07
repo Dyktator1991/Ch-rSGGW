@@ -2,9 +2,10 @@
 using ChoirSGGW.Entities.Models.Types;
 using System;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 namespace ChoirSGGW.DataAccess.Context
 {
-    public interface IChoirContext
+    public interface IChoirContext : IDisposable
     {
         DbSet<ClotheTypes> ClotheType { get; set; }
         DbSet<Concert> Concerts { get; set; }
@@ -16,5 +17,9 @@ namespace ChoirSGGW.DataAccess.Context
         DbSet<Topicality> Topicality { get; set; }
         DbSet<TopicalityType> TopicalityType { get; set; }
         DbSet<UserTypes> UserTypes { get; set; }
+
+        DbSet<T> Set<T>() where T : class;
+        int SaveChanges();
+        DbEntityEntry Entry(object entity);
     }
 }

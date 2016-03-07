@@ -14,9 +14,9 @@ namespace ChoirSGGW.DataAccess.DependencySupport
 {
     public class RegisterTypes
     {
-        private readonly UnityContainer unityContainer;
+        private readonly IUnityContainer unityContainer;
 
-        public RegisterTypes(UnityContainer unityContainer)
+        public RegisterTypes(IUnityContainer unityContainer)
         {
             this.unityContainer = unityContainer;
         }

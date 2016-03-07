@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class PhotoRepository : GenericRepository<Photo>, IPhotoRepository
     {
-        readonly IChoirContext context;
-
-        public PhotoRepository(IChoirContext context, DbContext dbcontext)
-            : base(dbcontext)
+        public PhotoRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class TopicalityRepository : GenericRepository<Topicality>, ITopicalityRepository
     {
-        readonly IChoirContext context;
-
-        public TopicalityRepository(IChoirContext context, DbContext dbcontext)
-            : base(dbcontext)
+        public TopicalityRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

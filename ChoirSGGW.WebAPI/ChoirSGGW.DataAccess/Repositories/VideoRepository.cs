@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class VideoRepository : GenericRepository<Video>, IVideoRepository
     {
-        readonly IChoirContext context;
-
-        public VideoRepository(IChoirContext context, DbContext dbcontext)
-            : base(dbcontext)
+        public VideoRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

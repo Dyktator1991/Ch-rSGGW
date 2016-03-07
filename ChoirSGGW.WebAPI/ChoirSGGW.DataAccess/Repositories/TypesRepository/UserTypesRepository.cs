@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories.TypesRepository
 {
     public class UserTypesRepository : GenericRepository<UserTypes>, IUserTypesRepository
     {
-        readonly IChoirContext context;
-
-        public UserTypesRepository(IChoirContext context, DbContext dbcontext)
-            : base(dbcontext)
+        public UserTypesRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

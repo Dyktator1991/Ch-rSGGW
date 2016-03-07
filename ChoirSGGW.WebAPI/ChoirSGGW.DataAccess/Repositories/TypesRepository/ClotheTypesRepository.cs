@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories.TypesRepository
 {
     public class ClotheTypesRepository : GenericRepository<ClotheTypes>, IClotheTypesRepository
     {
-        readonly IChoirContext context;
-
-        public ClotheTypesRepository(IChoirContext context, DbContext dbcontext)
-            : base(dbcontext)
+        public ClotheTypesRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

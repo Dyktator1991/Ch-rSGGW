@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class RepertoireRepository : GenericRepository<Repertoire>, IRepertoireRepository
     {
-        readonly IChoirContext context;
-
-        public RepertoireRepository(IChoirContext context, DbContext dbcontext)
-            : base(dbcontext)
+        public RepertoireRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

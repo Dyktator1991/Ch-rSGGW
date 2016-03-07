@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class AchievementRepository : GenericRepository<Achievement>, IAchievementRepository
     {
-        readonly IChoirContext context;
-
-        public AchievementRepository(IChoirContext context, DbContext bdcontext)
-            : base(bdcontext)
+        public AchievementRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

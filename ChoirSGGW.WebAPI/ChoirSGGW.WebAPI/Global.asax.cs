@@ -23,8 +23,6 @@ namespace ChoirSGGW.WebAPI
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            new TypeRegister().BuildUnityContainer();
         }
     }
 }

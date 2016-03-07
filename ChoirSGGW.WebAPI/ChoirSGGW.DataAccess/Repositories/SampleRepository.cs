@@ -13,12 +13,9 @@ namespace ChoirSGGW.DataAccess.Repositories
 {
     public class SampleRepository : GenericRepository<Sample>, ISampleRepository
     {
-        readonly IChoirContext context;
-
-        public SampleRepository(IChoirContext context, DbContext dbcontext)
-            : base(dbcontext)
+        public SampleRepository(IChoirContext context)
+            : base(context)
         {
-            this.context = context;
         }
     }
 }

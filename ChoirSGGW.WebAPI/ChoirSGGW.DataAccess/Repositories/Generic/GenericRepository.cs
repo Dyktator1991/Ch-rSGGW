@@ -11,10 +11,10 @@ namespace ChoirSGGW.DataAccess.Repositories.Generic
 {
     public abstract class GenericRepository<T> : IGenericRepository<T> where T : BasicModel
     {
-        protected DbContext _entities;
+        protected IChoirContext _entities;
         protected readonly IDbSet<T> _dbset;
 
-        public GenericRepository(DbContext context)
+        public GenericRepository(IChoirContext context)
         {
             _entities = context;
             _dbset = context.Set<T>();
