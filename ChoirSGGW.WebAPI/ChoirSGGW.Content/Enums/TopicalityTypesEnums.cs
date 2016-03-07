@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChoirSGGW.Entities.Enums
+namespace ChoirSGGW.Content.Enums
 {
     public enum TopicalityTypesEnums
     {

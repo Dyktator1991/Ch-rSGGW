@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ChoirSGGW.Entities.Enums;
+using ChoirSGGW.Content.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ChoirSGGW.Entities.Models.Types

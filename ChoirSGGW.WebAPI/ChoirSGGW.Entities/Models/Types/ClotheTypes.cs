@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ChoirSGGW.Entities.Enums;
+using ChoirSGGW.Content.Enums;
 using ChoirSGGW.Entities.Models.BasicModels;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
