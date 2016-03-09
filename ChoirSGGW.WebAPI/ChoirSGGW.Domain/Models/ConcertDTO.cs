@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ChoirSGGW.Domain.Models
 {
-    class ConcertDTO : EventDTO
+    public class ConcertDTO : EventDTO
     {
         public ConcertDTO()
         {
