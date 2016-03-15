@@ -3,12 +3,9 @@ using ChoirSGGW.DataAccess.Repositories;
 using ChoirSGGW.DataAccess.Repositories.Interfaces;
 using ChoirSGGW.DataAccess.Repositories.TypesRepository;
 using ChoirSGGW.DataAccess.Repositories.TypesRepository.Interfaces;
+using ChoirSGGW.DataAccess.UnitOfWorkk;
 using Microsoft.Practices.Unity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace ChoirSGGW.DataAccess.DependencySupport
 {
@@ -41,6 +38,10 @@ namespace ChoirSGGW.DataAccess.DependencySupport
 
             //context
             unityContainer.RegisterType<IChoirContext, ChoirContext>();
+
+            //UnitOfWork
+            unityContainer.RegisterType<IUnitOfWork, UnitOfWork>();
+            unityContainer.RegisterType<DbContext, ChoirContext>(new PerResolveLifetimeManager());
 
             return unityContainer;
         }

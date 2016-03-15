@@ -1,4 +1,7 @@
-﻿using ChoirSGGW.Domain.Services.Interfaces;
+﻿using AutoMapper;
+using ChoirSGGW.Domain.Models;
+using ChoirSGGW.Domain.Services.Interfaces;
+using ChoirSGGW.Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +23,9 @@ namespace ChoirSGGW.WebAPI.Controllers
         /// Retrieve list of Concerts
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<string> Get()
+        public IEnumerable<ConcertDTO> Get()
         {
-            return new string[] { "value1", "value2" };
+            return Mapper.Map<IEnumerable<ConcertDTO>>(concertService.GetAll());
         }
 
         /// <summary>
@@ -41,6 +44,22 @@ namespace ChoirSGGW.WebAPI.Controllers
         /// <param name="value"></param>
         public void Post([FromBody]string value)
         {
+            concertService.Create(
+                Mapper.Map<Concert>(
+                new ConcertDTO()
+            {
+                ClotheType = null,
+                ConcertUrl = "teststronakaski.cba.pl",
+                Content = "jakis tam content",
+                EndTime = DateTime.Now,
+                IsVisibleIntoTimetable = true,
+                MainPhoto = null,
+                Members = null,
+                Photos = null,
+                Place = "Warsaw SGGW",
+                Title = "Super nowy koncert",
+                StartTime = DateTime.Now,
+            }));
         }
 
         /// <summary>

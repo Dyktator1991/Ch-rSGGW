@@ -92,6 +92,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\ConfigureMappings.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="DependencySupport\RegisterTypes.cs" />
@@ -114,6 +115,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AchievementService.cs" />
     <Compile Include="Services\ConcertService.cs" />
+    <Compile Include="Services\Generic\GenericService.cs" />
+    <Compile Include="Services\Generic\IGenericService.cs" />
     <Compile Include="Services\Interfaces\IAchievementService.cs" />
     <Compile Include="Services\Interfaces\IConcertService.cs" />
     <Compile Include="Services\Interfaces\IPhotoService.cs" />
@@ -144,6 +147,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ChoirSGGW.Content\ChoirSGGW.Content.csproj">
+      <Project>{d42b7f03-5e78-40d2-9565-bdd44d3c7977}</Project>
+      <Name>ChoirSGGW.Content</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ChoirSGGW.DataAccess\ChoirSGGW.DataAccess.csproj">
       <Project>{e7ca7c63-83b9-4894-8194-c565a2913c5e}</Project>
       <Name>ChoirSGGW.DataAccess</Name>

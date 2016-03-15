@@ -131,6 +131,8 @@
     <Compile Include="Repositories\TypesRepository\SongsTypeRepository.cs" />
     <Compile Include="Repositories\TypesRepository\TopicalityTypeRepository.cs" />
     <Compile Include="Repositories\TypesRepository\UserTypesRepository.cs" />
+    <Compile Include="UnitOfWorkk\IUnitOfWork.cs" />
+    <Compile Include="UnitOfWorkk\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
